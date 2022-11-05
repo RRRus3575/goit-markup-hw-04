@@ -24,17 +24,20 @@ body {
 .web,
 .nav:focus,
 .nav:hover,
+.link-contact-head:focus,
+.link-contact-head:hover,
 .link-contact:focus,
 .link-contact:hover,
 .white:focus,
 .white:hover {
   color: var(--color);
 }
+.link-contact-head,
 .link-contact,
 .white {
   font-style: normal;
 }
-.link-contact {
+.link-contact-head {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -71,7 +74,8 @@ body {
 .navbar .item:not(:last-child) {
   margin-right: 50px;
 }
-.link-contact {
+.link-contact,
+.link-contact-head {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -236,11 +240,13 @@ body {
   color: #ffffff;
 }
 .logo-foot {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  color: #ffffff;
 }
 .menu {
   display: flex;
@@ -299,7 +305,6 @@ body {
 .foot-contacts {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 9px;
   margin-top: 20px;
-  height: 81px;
 }
