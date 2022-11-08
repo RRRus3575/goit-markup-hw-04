@@ -87,7 +87,9 @@ body {
   padding-top: 200px;
   text-align: center;
   color: #ffffff;
-  background: #2f303a;
+  background-image: url(../images/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header {
   border-bottom: Solid #ececec;
