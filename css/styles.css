@@ -20,6 +20,9 @@ a,
 button {
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -386,11 +389,7 @@ button {
   gap: 30px;
   margin-top: 34px;
 }
-.services-li {
-  text-align: start;
-  font-size: 16px;
-  line-height: 1.9;
-}
+
 .box {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -406,7 +405,16 @@ button {
   height: 1px;
   margin: -1px;
 }
-
+.case:hover,
+.case:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.case {
+  text-align: start;
+  font-size: 16px;
+  line-height: 1.9;
+}
 .foot-contacts {
   display: flex;
   flex-direction: column;
