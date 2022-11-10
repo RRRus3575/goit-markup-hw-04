@@ -7,7 +7,19 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a,
+button {
+  cursor: pointer;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -38,7 +50,8 @@ body {
   font-style: normal;
 }
 .link-contact-head {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -47,7 +60,22 @@ body {
   margin: 0;
   padding: 0;
 }
+.img-benefits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.benefits-svg {
+  width: 70px;
+  height: 70px;
+}
 .benefits-h {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
@@ -67,10 +95,6 @@ body {
   letter-spacing: 0.02em;
   color: #000;
 }
-
-.tel {
-  margin-right: 50px;
-}
 .navbar .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -81,15 +105,25 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
 }
-
-.hero {
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 200px;
   padding-top: 200px;
   text-align: center;
   color: #ffffff;
-  background-image: url(../images/header.jpg);
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/header.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .header {
   border-bottom: Solid #ececec;
@@ -112,7 +146,21 @@ body {
   flex-direction: row;
   justify-content: end;
   margin-left: auto;
+  gap: 50px;
 }
+.icon-header {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.mail {
+  width: 16px;
+  height: 12px;
+}
+.tel {
+  width: 10px;
+  height: 16px;
+}
+
 .logo {
   margin-right: 45px;
   flex-grow: 0;
@@ -173,11 +221,15 @@ body {
   padding-top: 0;
   padding-bottom: 94px;
 }
-.products-h {
+.products-h,
+.constantly-h {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+}
+.constantly-h {
+  margin-bottom: 50px;
 }
 .products-ul,
 .team-ul {
@@ -195,7 +247,6 @@ body {
   font-size: 36px;
   line-height: 1.6667;
   letter-spacing: 0.03em;
-
   color: #212121;
 }
 .team-li-h {
@@ -208,6 +259,9 @@ body {
 .team-ul {
   flex-wrap: wrap;
 }
+.team-container {
+  margin: 32px 30px;
+}
 .team-li {
   font-size: 16px;
   line-height: 1.2;
@@ -216,6 +270,29 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
+}
+.msg {
+  display: flex;
+  gap: 10px;
+}
+.link-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  fill: #757575;
+  border-radius: 25px;
+}
+.link-msg:hover,
+.link-msg-foot:hover,
+.link-msg:focus,
+.link-msg-foot:focus {
+  background-color: var(--color);
+  fill: #ffffff;
+}
+.msg-icon {
+  width: 20px;
+  height: 20px;
 }
 .portfolio {
   margin-top: 0;
@@ -227,10 +304,36 @@ body {
   color: #212121;
 }
 .specialization {
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.9;
   color: #757575;
+}
+.constantly-list {
+  display: flex;
+  gap: 30px;
+}
+.constantly-svg {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  fill: #afb1b8;
+}
+.constantly-link:hover,
+.constantly-link:focus {
+  fill: var(--color);
+  border: 1px solid var(--color);
+}
+.constantly-svg:hover,
+.constantly-svg:focus {
+  fill: var(--color);
+  border: 1px solid var(--color);
+}
+.constantly-link {
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 .footer {
   padding-top: 60px;
@@ -309,4 +412,26 @@ body {
   flex-direction: column;
   gap: 9px;
   margin-top: 20px;
+}
+.link-msg-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  fill: #ffffff;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.foot {
+  display: flex;
+}
+footer h2 {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.foot-wrap {
+  margin: 12px auto 100px 70px;
 }
