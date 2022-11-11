@@ -110,14 +110,12 @@ a {
 }
 .overlay {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 200px;
   padding-top: 200px;
   text-align: center;
   color: #ffffff;
-  background-color: #c4c4c4;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -175,7 +173,9 @@ a {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke: 1px #000;
 }
-
+.hero {
+  background-color: #c4c4c4;
+}
 .hero-h {
   margin-top: 0;
   margin-bottom: 30px;
@@ -283,15 +283,18 @@ a {
   justify-content: center;
   align-items: center;
   padding: 12px;
-  fill: #757575;
+  color: #757575;
   border-radius: 25px;
+}
+.msg-icon {
+  fill: currentColor;
 }
 .link-msg:hover,
 .link-msg-foot:hover,
 .link-msg:focus,
 .link-msg-foot:focus {
   background-color: var(--color);
-  fill: #ffffff;
+  color: #ffffff;
 }
 .msg-icon {
   width: 20px;
@@ -318,23 +321,20 @@ a {
   gap: 30px;
 }
 .constantly-svg {
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .constantly-link:hover,
 .constantly-link:focus {
-  fill: var(--color);
+  color: var(--color);
   border: 1px solid var(--color);
 }
-.constantly-svg:hover,
-.constantly-svg:focus {
-  fill: var(--color);
-  border: 1px solid var(--color);
-}
+
 .constantly-link {
   display: flex;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -426,7 +426,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 12px;
-  fill: #ffffff;
+  color: #ffffff;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
 }

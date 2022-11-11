@@ -15,28 +15,28 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.icon-logo-four {
-  width: 2.0234375em;
+.icon-logo-six {
+  width: 1.7666015625em;
 }
 
-.icon-logo-six {
-  width: 2.0888671875em;
+.icon-logo-four {
+  width: 1.7666015625em;
 }
 
 .icon-logo-one {
-  width: 0.8720703125em;
-}
-
-.icon-logo-two {
-  width: 0.76953125em;
-}
-
-.icon-logo-three {
-  width: 1.0712890625em;
+  width: 1.7666015625em;
 }
 
 .icon-logo-five {
-  width: 1.3408203125em;
+  width: 1.7666015625em;
+}
+
+.icon-logo-three {
+  width: 1.7666015625em;
+}
+
+.icon-logo-two {
+  width: 1.7666015625em;
 }
 
 .icon-mail {
